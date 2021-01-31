@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <AU_SCHEMAXML>
+        <AU_PERMISSIONMASK><![CDATA[750]]></AU_PERMISSIONMASK>
+        <AU_XMLVALIDATOR><![CDATA[Saxonica]]></AU_XMLVALIDATOR>
+        <AU_IDOCOBJTYPE><![CDATA[null]]></AU_IDOCOBJTYPE>
+        <AU_ACTIVEVERSION><![CDATA[true]]></AU_ACTIVEVERSION>
+        <AU_DTDFILEPATH><![CDATA[C:\fakepath\example.xml]]></AU_DTDFILEPATH>
+        <AU_SELECTEDROOT><![CDATA[null]]></AU_SELECTEDROOT>
+        <AU_CONVERTTOXSD><![CDATA[false]]></AU_CONVERTTOXSD>
+        <AU_SYNCHRONIZED><![CDATA[false]]></AU_SYNCHRONIZED>
+        <AU_REUSABLE><![CDATA[true]]></AU_REUSABLE>
+        <AU_IDOCEXT><![CDATA[null]]></AU_IDOCEXT>
+        <AU_DEFFMODE><![CDATA[null]]></AU_DEFFMODE>
+        <AU_ID><![CDATA[192168001012161209136128800002]]></AU_ID>
+        <XSDTYPE><![CDATA[]]></XSDTYPE>
+        <AU_REVISION><![CDATA[null]]></AU_REVISION>
+        <AU_GROUPOWNER><![CDATA[IndigoGroup:127000000001107055548721600002]]></AU_GROUPOWNER>
+        <AU_CREATIONDATE><![CDATA[2021-01-31 12:09:21.288]]></AU_CREATIONDATE>
+        <PROVIDERXSDTYPE><![CDATA[]]></PROVIDERXSDTYPE>
+        <AU_XMLSCHEMATYPE><![CDATA[null]]></AU_XMLSCHEMATYPE>
+        <AU_USEROWNER><![CDATA[IndigoUser:127000000001107055536473900001]]></AU_USEROWNER>
+        <AU_MODIFIEDDATE><![CDATA[2021-01-31 12:09:21.288]]></AU_MODIFIEDDATE>
+        <AU_SYSTEMRELEASE><![CDATA[null]]></AU_SYSTEMRELEASE>
+        <AU_DTDFILE><![CDATA[]]></AU_DTDFILE>
+        <AU_IDOCTYPE><![CDATA[null]]></AU_IDOCTYPE>
+        <AU_JCAADAPTERID><![CDATA[null]]></AU_JCAADAPTERID>
+        <AU_SAPCLIENT><![CDATA[null]]></AU_SAPCLIENT>
+        <AU_MODIFIEDBY><![CDATA[IndigoUser:127000000001107055536473900001]]></AU_MODIFIEDBY>
+        <AU_WSPROVIDERID><![CDATA[]]></AU_WSPROVIDERID>
+        <AU_COMMENTS><![CDATA[null]]></AU_COMMENTS>
+        <AU_APPRELEASE><![CDATA[null]]></AU_APPRELEASE>
+        <XSDFILEPATH><![CDATA[null]]></XSDFILEPATH>
+        <AU_PREVIOUSVERSION><![CDATA[]]></AU_PREVIOUSVERSION>
+        <AU_VALIDATEXML><![CDATA[false]]></AU_VALIDATEXML>
+        <AU_XSD><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://demo1610724.mockable.io/service/1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:operationRequest>qq</ns:operationRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></AU_XSD>
+        <AU_XMLSCHEMAVERSION><![CDATA[2.0]]></AU_XMLSCHEMAVERSION>
+        <AU_ENCODINGUSED><![CDATA[UTF-8]]></AU_ENCODINGUSED>
+        <AU_VERSION><![CDATA[1]]></AU_VERSION>
+        <AU_PROJECTOWNER><![CDATA[Default]]></AU_PROJECTOWNER>
+        <AU_FILEREFERENCESID><![CDATA[]]></AU_FILEREFERENCESID>
+        <AU_JSON><![CDATA[null]]></AU_JSON>
+        <AU_FREVVOXSD><![CDATA[]]></AU_FREVVOXSD>
+        <AU_DESCRIPTION><![CDATA[tsts]]></AU_DESCRIPTION>
+        <AU_ENTITYNAME><![CDATA[tst]]></AU_ENTITYNAME>
+        <AU_WSMESSAGECALLID><![CDATA[]]></AU_WSMESSAGECALLID>
+        <XSDNAME><![CDATA[null]]></XSDNAME>
+    </AU_SCHEMAXML>
+    <columnInfo dbtype="1">
+        <column name="AU_ID" type="12"/>
+        <column name="AU_VERSION" type="12"/>
+        <column name="AU_PREVIOUSVERSION" type="12"/>
+        <column name="AU_ACTIVEVERSION" type="-7"/>
+        <column name="AU_ENTITYNAME" type="12"/>
+        <column name="AU_USEROWNER" type="12"/>
+        <column name="AU_GROUPOWNER" type="12"/>
+        <column name="AU_PERMISSIONMASK" type="12"/>
+        <column name="AU_DESCRIPTION" type="12"/>
+        <column name="AU_COMMENTS" type="12"/>
+        <column name="AU_MODIFIEDBY" type="12"/>
+        <column name="AU_CREATIONDATE" type="93"/>
+        <column name="AU_MODIFIEDDATE" type="93"/>
+        <column name="AU_REVISION" type="12"/>
+        <column name="AU_SYNCHRONIZED" type="-7"/>
+        <column name="AU_PROJECTOWNER" type="12"/>
+        <column name="AU_XSD" type="12"/>
+        <column name="XSDFILEPATH" type="12"/>
+        <column name="AU_ENCODINGUSED" type="12"/>
+        <column name="AU_REUSABLE" type="-7"/>
+        <column name="AU_DTDFILEPATH" type="12"/>
+        <column name="AU_CONVERTTOXSD" type="-7"/>
+        <column name="AU_JSON" type="12"/>
+        <column name="AU_XMLSCHEMAVERSION" type="12"/>
+        <column name="AU_FILEREFERENCESID" type="12"/>
+        <column name="AU_DTDFILE" type="12"/>
+        <column name="AU_VALIDATEXML" type="-7"/>
+        <column name="AU_WSMESSAGECALLID" type="12"/>
+        <column name="AU_WSPROVIDERID" type="12"/>
+        <column name="AU_JCAADAPTERID" type="12"/>
+        <column name="XSDTYPE" type="12"/>
+        <column name="PROVIDERXSDTYPE" type="12"/>
+        <column name="XSDNAME" type="12"/>
+        <column name="AU_FREVVOXSD" type="12"/>
+        <column name="AU_XMLSCHEMATYPE" type="12"/>
+        <column name="AU_DEFFMODE" type="12"/>
+        <column name="AU_IDOCOBJTYPE" type="12"/>
+        <column name="AU_IDOCEXT" type="12"/>
+        <column name="AU_SELECTEDROOT" type="12"/>
+        <column name="AU_XMLVALIDATOR" type="12"/>
+        <column name="AU_IDOCTYPE" type="12"/>
+        <column name="AU_SYSTEMRELEASE" type="12"/>
+        <column name="AU_APPRELEASE" type="12"/>
+        <column name="AU_SAPCLIENT" type="12"/>
+    </columnInfo>
+</data>
