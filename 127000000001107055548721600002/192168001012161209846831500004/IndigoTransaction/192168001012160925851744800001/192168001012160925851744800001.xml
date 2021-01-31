@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
     <AU_TRANSACTION>
-        <AU_WEBPDXML><![CDATA[]]></AU_WEBPDXML>
+        <AU_CONNECTDASHBOARDLOGGING><![CDATA[false]]></AU_CONNECTDASHBOARDLOGGING>
+        <AU_CREATIONDATE><![CDATA[2020-12-29 17:15:17.0]]></AU_CREATIONDATE>
         <AU_REPOSITORYACTION><![CDATA[L]]></AU_REPOSITORYACTION>
-        <AU_ENTITYNAME><![CDATA[ReadFile]]></AU_ENTITYNAME>
-        <AU_LOGGINGLEVEL><![CDATA[DEBUG]]></AU_LOGGINGLEVEL>
-        <AU_PROJECTOWNER><![CDATA[Project:192168001012161209846831500004]]></AU_PROJECTOWNER>
-        <AU_ID><![CDATA[192168001012160925851744800001]]></AU_ID>
+        <AU_DESCRIPTION><![CDATA[Read file transform and store it]]></AU_DESCRIPTION>
+        <AU_DATAENCRYPTIONATREST><![CDATA[useGlobalPolicy]]></AU_DATAENCRYPTIONATREST>
+        <AU_PERMISSIONMASK><![CDATA[750]]></AU_PERMISSIONMASK>
+        <AU_GROUPOWNER><![CDATA[IndigoGroup:127000000001107055548721600002]]></AU_GROUPOWNER>
         <AU_SYNCHRONIZED><![CDATA[false]]></AU_SYNCHRONIZED>
-        <AU_MODIFIEDDATE><![CDATA[2021-01-31 14:17:31.0]]></AU_MODIFIEDDATE>
+        <AU_USEROWNER><![CDATA[IndigoUser:127000000001107055536473900001]]></AU_USEROWNER>
+        <AU_MODIFIEDBY><![CDATA[IndigoUser:127000000001107055536473900001]]></AU_MODIFIEDBY>
+        <AU_REVISION><![CDATA[bdbaa291056f4a5ce1454bb5ed115b12aa9c1518]]></AU_REVISION>
+        <AU_WEBPDXML><![CDATA[]]></AU_WEBPDXML>
+        <AU_COMMENTS><![CDATA[null]]></AU_COMMENTS>
+        <AU_RETAINVARXML><![CDATA[false]]></AU_RETAINVARXML>
+        <AU_TRACKVARIABLES><![CDATA[<?xml version="1.0"?><Variables></Variables>]]></AU_TRACKVARIABLES>
+        <AU_ID><![CDATA[192168001012160925851744800001]]></AU_ID>
+        <AU_ADVANCED><![CDATA[true]]></AU_ADVANCED>
+        <AU_PREVIOUSVERSION><![CDATA[]]></AU_PREVIOUSVERSION>
+        <AU_LOGGINGLEVEL><![CDATA[DEBUG]]></AU_LOGGINGLEVEL>
         <AU_RECOVERABLE><![CDATA[true]]></AU_RECOVERABLE>
+        <AU_ENTITYNAME><![CDATA[ReadFile]]></AU_ENTITYNAME>
+        <AU_PRIORITY><![CDATA[LOW]]></AU_PRIORITY>
+        <AU_MODIFIEDDATE><![CDATA[2021-01-31 14:30:03.0]]></AU_MODIFIEDDATE>
         <AU_FLOWDESCRIPTOR><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <AdeptiaPE xmlns:version = "4.7" xmlns:j = "jelly:core" xmlns:abpm = "jelly:com.adeptia.indigo.jelly.IndigoTagLibrary" xmlns:pd = "jelly:com.adeptia.indigo.pd.ProcessDesignerTagLibrary" xmlns = "jelly:com.werken.blissed.jelly.BlissedTagLibrary" >
 	<process name = "mainProcess" var = "mainProcess" start = "startState">
@@ -49,8 +63,8 @@
 				<abpm:activity type="RepeaterService" id="" name="RepeaterService" async="false"  >
 					<abpm:params>
 						<abpm:param name="restartWaitTime">60</abpm:param>
-						<abpm:param name="streamNames">1:2</abpm:param>
 						<abpm:param name="restartTriesCount">0</abpm:param>
+						<abpm:param name="streamNames">1:2</abpm:param>
 						<abpm:param name="source">ReadFile</abpm:param>
 					</abpm:params>
 				</abpm:activity>
@@ -107,13 +121,13 @@
 			<activity>
 				<abpm:activity type="FileSource" id="192168001012160959263979000003" name="ReadFile" async="false"  >
 					<abpm:params>
-						<abpm:param name="eventContextEnabled">false</abpm:param>
 						<abpm:param name="restartWaitTime">60</abpm:param>
+						<abpm:param name="eventContextEnabled">false</abpm:param>
 						<abpm:param name="restartTriesCount">0</abpm:param>
 					</abpm:params>
 				</abpm:activity>
-				<pd:graphics x = "201.0" y = "110.0" width = "75.0" height = "40.0" streamNames = "name=ReadFile,explicit=false,error=false,target=state-BPMN:TASK:BASIC_TASK-1059298250#"  owner = "FlowObject" textLabel = "Read_file" associatedLane = "192168001012161209857015700001" associatedPool = "192168001012161209857018300002" color = "172,227,236" printSequence = "3"/>
-				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-1821632160" destination = "state-BPMN:TASK:BASIC_TASK-1059298250" xpoints = "286,324" ypoints = "130,130" hasManualPlacement = "false" arcData = "" arrowPoints = "326,334,326,326|126,130,134,126" order = "0" startPoint = "276,130" endPoint = "334,130" direction = "2,6" linkColor = "0,0,0" owner = "Transition" textLabel = "" textX = "0" textY = "0" textLabelWidth = "0.0" textLabelHeight = "0.0" printSequence = "-1"/>
+				<pd:graphics x = "155.0" y = "85.0" width = "75.0" height = "40.0" streamNames = "name=ReadFile,explicit=false,error=false,target=state-BPMN:TASK:BASIC_TASK-1059298250#"  owner = "FlowObject" textLabel = "Read_file" associatedLane = "192168001012161209857015700001" associatedPool = "192168001012161209857018300002" color = "172,227,236" printSequence = "3"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-1821632160" destination = "state-BPMN:TASK:BASIC_TASK-1059298250" xpoints = "240,282,282,282,282,324" ypoints = "105,105,105,130,130,130" hasManualPlacement = "false" arcData = "282,100,10,10,180,-90|277,120,10,10,270,90" arrowPoints = "326,334,326,326|126,130,134,126" order = "0" startPoint = "230,105" endPoint = "334,130" direction = "2,6" linkColor = "0,0,0" owner = "Transition" textLabel = "" textX = "0" textY = "0" textLabelWidth = "0.0" textLabelHeight = "0.0" printSequence = "-1"/>
 				<pd:comments/>
 			</activity>
 		</state>
@@ -168,7 +182,7 @@
 			<activity>
 				<pd:event type = "start" subType = "none" />
 				<pd:graphics x = "30.0" y = "103.0" width = "30.0" height = "30.0" owner = "FlowObject" textLabel = "Start Event" associatedLane = "192168001012161209857015700001" associatedPool = "192168001012161209857018300002" color = "0,204,15" printSequence = "1"/>
-				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:EVENT:START_EVENT-1936736461" destination = "state-BPMN:TASK:BASIC_TASK-1821632160" xpoints = "70,130,130,130,130,190" ypoints = "118,118,118,130,130,130" hasManualPlacement = "false" arcData = "130,113,10,10,180,-90|125,120,10,10,270,90" arrowPoints = "193,201,193,193|126,130,134,126" order = "0" startPoint = "60,118" endPoint = "201,130" direction = "2,6" linkColor = "0,0,0" owner = "Transition" textLabel = "" textX = "0" textY = "0" textLabelWidth = "0.0" textLabelHeight = "0.0" printSequence = "-1"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:EVENT:START_EVENT-1936736461" destination = "state-BPMN:TASK:BASIC_TASK-1821632160" xpoints = "70,107,107,107,107,144" ypoints = "118,118,118,105,105,105" hasManualPlacement = "false" arcData = "107,113,10,10,180,-90|102,95,10,10,270,90" arrowPoints = "147,155,147,147|101,105,109,101" order = "0" startPoint = "60,118" endPoint = "155,105" direction = "2,6" linkColor = "0,0,0" owner = "Transition" textLabel = "" textX = "0" textY = "0" textLabelWidth = "0.0" textLabelHeight = "0.0" printSequence = "-1"/>
 				<pd:comments/>
 			</activity>
 		</state>
@@ -207,29 +221,15 @@
 	</process>
 </AdeptiaPE>
 ]]></AU_FLOWDESCRIPTOR>
-        <AU_CHILDFLOWS><![CDATA[]]></AU_CHILDFLOWS>
-        <AU_MODIFIEDBY><![CDATA[IndigoUser:127000000001107055536473900001]]></AU_MODIFIEDBY>
-        <AU_GROUPOWNER><![CDATA[IndigoGroup:127000000001107055548721600002]]></AU_GROUPOWNER>
-        <AU_DESCRIPTION><![CDATA[Read file transform and store it]]></AU_DESCRIPTION>
-        <AU_TEMPLATENAME><![CDATA[Process Designer]]></AU_TEMPLATENAME>
-        <AU_CONNECTDASHBOARDLOGGING><![CDATA[false]]></AU_CONNECTDASHBOARDLOGGING>
-        <AU_USEROWNER><![CDATA[IndigoUser:127000000001107055536473900001]]></AU_USEROWNER>
-        <AU_PRIORITY><![CDATA[LOW]]></AU_PRIORITY>
-        <AU_DATAENCRYPTIONATREST><![CDATA[useGlobalPolicy]]></AU_DATAENCRYPTIONATREST>
-        <AU_ACTIVEFLAG><![CDATA[true]]></AU_ACTIVEFLAG>
-        <AU_RETAINVARXML><![CDATA[false]]></AU_RETAINVARXML>
-        <AU_ACTIVEVERSION><![CDATA[true]]></AU_ACTIVEVERSION>
-        <AU_OLDFLOWDESCRIPTOR><![CDATA[]]></AU_OLDFLOWDESCRIPTOR>
-        <AU_COMMENTS><![CDATA[null]]></AU_COMMENTS>
-        <AU_TRACKVARIABLES><![CDATA[<?xml version="1.0"?><Variables></Variables>]]></AU_TRACKVARIABLES>
-        <AU_REVISION><![CDATA[ce170ce37a2718ef27ccd1d93e84c16d5c208c2d]]></AU_REVISION>
-        <AU_VERSION><![CDATA[1]]></AU_VERSION>
-        <AU_ADVANCED><![CDATA[true]]></AU_ADVANCED>
-        <AU_PREVIOUSVERSION><![CDATA[]]></AU_PREVIOUSVERSION>
-        <AU_PERMISSIONMASK><![CDATA[750]]></AU_PERMISSIONMASK>
-        <AU_REALTIMECONFIGURATION><![CDATA[false]]></AU_REALTIMECONFIGURATION>
-        <AU_CREATIONDATE><![CDATA[2020-12-29 17:15:17.0]]></AU_CREATIONDATE>
         <AU_LOGRETENTIONACTION><![CDATA[L]]></AU_LOGRETENTIONACTION>
+        <AU_PROJECTOWNER><![CDATA[Project:192168001012161209846831500004]]></AU_PROJECTOWNER>
+        <AU_TEMPLATENAME><![CDATA[Process Designer]]></AU_TEMPLATENAME>
+        <AU_OLDFLOWDESCRIPTOR><![CDATA[]]></AU_OLDFLOWDESCRIPTOR>
+        <AU_ACTIVEFLAG><![CDATA[true]]></AU_ACTIVEFLAG>
+        <AU_REALTIMECONFIGURATION><![CDATA[false]]></AU_REALTIMECONFIGURATION>
+        <AU_VERSION><![CDATA[1]]></AU_VERSION>
+        <AU_CHILDFLOWS><![CDATA[]]></AU_CHILDFLOWS>
+        <AU_ACTIVEVERSION><![CDATA[true]]></AU_ACTIVEVERSION>
     </AU_TRANSACTION>
     <columnInfo dbtype="1">
         <column name="AU_ID" type="12"/>
